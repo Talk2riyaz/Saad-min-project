@@ -1,35 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Monu created</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+1) // Import stylesheets
+import './style.css';
 
-    <header id="bg-img">
-        <div class="main">
-            <div id="logo">
-               <h2>Saad Qureshi</h2>
-            </div>
-            <ul>
-                <li class="active"> <a href="#">Home</a></li>
-                <li> <a href="#">Sarvices</a></li>
-                <li> <a href="#">Galary</a></li>
-                <li> <a href="#">About</a></li>
-                <li> <a href="#">contract</a></li>
-            </u
-        </div>
-        <div class="title">
-            <h1>MONU CREATED</h1>
-        </div>
-        <div class="button">
-            <a href="#" class="btn">WATCH VIDEO</a>
-            <a href="#" class="btn">LEARN MORE</a>
-        </div>
-    </header>
-    
-</body>
-</html>
+// Write Javascript code!
+const appDiv = document.getElementById('app');
+appDiv.innerHTML = `<h1>Guess the Output</h1>`;
+
+console.log('1');
+
+setTimeout(() => console.log('2'), 100);
+
+setTimeout(() => console.log('3'), 0);
+
+console.log('4');
+
+Promise.resolve()
+  .then(val1 => console.log('5'))
+  .then(val2 => console.log('6'));
+
+console.log('7');
+
+
+*********************************************************
+
+2) // Import stylesheets
+import './style.css';
+
+// Write Javascript code!
+const appDiv = document.getElementById('app');
+appDiv.innerHTML = `<h1>Find the second lowest value</h1>`;
+
+const arr = [-5, 8, 2, 10, -40, 99, 56, 13];
+
+
+
+****************************************************
+
+
+
+3) // Import stylesheets
+import './style.css';
+
+// Write Javascript code!
+const appDiv = document.getElementById('app');
+appDiv.innerHTML = `<h1>Guess the Output</h1>`;
+
+const firstPromise = new Promise((res, rej) => {
+  setTimeout(res, 500, 'one');
+});
+
+const secondPromise = new Promise((res, rej) => {
+  setTimeout(res, 100, 'two');
+});
+
+Promise.race([firstPromise, secondPromise]).then((res) => console.log(res));
+
+
+
+****************************************************************************
+
+
+4) // Import stylesheets
+import './style.css';
+
+// Write Javascript code!
+const appDiv = document.getElementById('app');
+appDiv.innerHTML = `<h1>Guess the Output</h1>`;
+
+console.log('1');
+
+setTimeout(() => console.log('2'), 100);
+
+setTimeout(() => console.log('3'), 0);
+
+console.log('4');
+
+Promise.resolve()
+  .then((val1) => console.log('5'))
+  .then((val2) => console.log('6'));
+
+console.log('7');
+
+// 1,4,7
+
+
+
+
+*****************************************************************
+
+
